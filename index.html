@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FreiPost</title>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- HEADER -->
+    <header class="header">
+
+      <div class="logo">
+        <div class="logo-mark">FP</div>
+        <div class="logo-text">FreiPost</div>
+      </div>
+
+      <div class="header-actions">
+
+        <button class="header-button" id="searchButton" aria-label="Pesquisar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="6.5"></circle>
+            <path d="M16 16L21 21"></path>
+          </svg>
+        </button>
+
+        <button class="header-button" id="messageButton" aria-label="Mensagens">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+            <path d="M4 7L12 13L20 7"></path>
+          </svg>
+        </button>
+
+      </div>
+
+    </header>
+
+
+    <!-- STORIES -->
+    <section class="stories-wrapper">
+
+      <div class="stories">
+
+        <div class="story create-story">
+          <div class="story-ring">
+            <span>+</span>
+          </div>
+          <span class="story-name">Criar</span>
+        </div>
+
+        <div class="story" data-name="Ana" data-image="http://127.0.0.1:5500/ani.png">
+          <div class="story-ring">
+            <img src="ani.webp" alt="Ana">
+          </div>
+          <span class="story-name">Ana</span>
+        </div>
+
+        <div class="story" data-name="Lucas" data-image="http://127.0.0.1:5500/lucas.png">
+          <div class="story-ring">
+            <img src="lucas.webp" alt="Lucas">
+          </div>
+          <span class="story-name">Lucas</span>
+        </div>
+
+        <div class="story" data-name="Marina" data-image="http://127.0.0.1:5500/mari.png">
+          <div class="story-ring">
+            <img src="mari.webp" alt="Marina">
+          </div>
+          <span class="story-name">Marina</span>
+        </div>
+
+        <div class="story" data-name="Pedro" data-image="http://127.0.0.1:5500/ped.png">
+          <div class="story-ring">
+            <img src="ped.png" alt="Pedro">
+          </div>
+          <span class="story-name">Pedro</span>
+        </div>
+
+        <div class="story" data-name="Julia" data-image="http://127.0.0.1:5500/julili.png">
+          <div class="story-ring">
+            <img src="julili.png" alt="Julia">
+          </div>
+          <span class="story-name">Julia</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FEED -->
+    <main class="feed" id="feed">
+
+
+      <!-- POST 1 -->
+      <article class="post">
+
+        <div class="post-header">
+
+          <div class="post-user">
+
+            <img
+              class="post-avatar"
+              src="ani.webp"
+              alt="Ana"
+            >
+
+            <div class="post-user-info">
+              <strong>ana.moraes</strong>
+              <span class="post-location">São Paulo, Brasil</span>
+            </div>
+
+          </div>
+
+          <button class="more-button">•••</button>
+
+        </div>
+
+
+        <img
+          class="post-image"
+          src="pai.webp"
+          alt="Paisagem"
+        >
+
+
+        <div class="post-content">
+
+          <div class="post-actions">
+
+            <div class="post-left-actions">
+
+              <button class="action-button like-button">
+
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M20.8 8.7c0 5.4-8.8 10.1-8.8 10.1S3.2 14.1 3.2 8.7C3.2 6 5.1 4 7.6 4c1.7 0 3.3.9 4.4 2.3C13.1 4.9 14.7 4 16.4 4c2.5 0 4.4 2 4.4 4.7z"/>
+                </svg>
+
+              </button>
+
+              <button class="action-button comment-button">
+
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M20 11.5a7.5 7.5 0 0 1-8 7.5 8.5 8.5 0 0 1-3.8-.9L4 20l1.3-3.5A7.4 7.4 0 0 1 4 11.5 7.5 7.5 0 0 1 12 4a7.5 7.5 0 0 1 8 7.5z"/>
+                </svg>
+
+              </button>
+
+              <button class="action-button share-button">
+
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M5 19L19 5"/>
+                  <path d="M10 5h9v9"/>
+                </svg>
+
+              </button>
+
+            </div>
+
+
+            <button class="action-button save-button">
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M6 4.5A1.5 1.5 0 0 1 7.5 3h9A1.5 1.5 0 0 1 18 4.5V21l-6-4-6 4V4.5z"/>
+              </svg>
+
+            </button>
+
+          </div>
+
+
+          <div class="likes">
+            <span class="like-count">1</span> reações
+          </div>
+
+
+          <div class="caption">
+            <strong>ana.moraes</strong>
+            Aproveitando o dia e colecionando bons momentos. ✨
+          </div>
+
+
+          <div class="comments">
+            Ver 3 comentários
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- CREATE POST -->
+      <section class="create-post">
+
+        <div class="create-row">
+
+          <img
+            class="my-avatar"
+            src="euu.png"
+            alt="Seu perfil"
+          >
+
+          <input
+            id="postInput"
+            class="create-input"
+            type="text"
+            placeholder="Compartilhe algo..."
+            maxlength="500"
+          >
+
+        </div>
+
+
+        <div class="create-actions">
+
+          <button class="create-action">📷 Foto</button>
+          <button class="create-action">🎥 Vídeo</button>
+          <button class="create-action">📍 Local</button>
+
+          <button id="publishButton" class="publish-button">
+            Publicar
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- POST 2 -->
+      <article class="post">
+
+        <div class="post-header">
+
+          <div class="post-user">
+
+            <img
+              class="post-avatar"
+              src="lucas.webp"
+              alt="Lucas"
+            >
+
+            <div class="post-user-info">
+              <strong>lucas.silva</strong>
+              <span class="post-location">Rio de Janeiro, Brasil</span>
+            </div>
+
+          </div>
+
+          <button class="more-button">•••</button>
+
+        </div>
+
+
+        <img
+          class="post-image"
+          src="papa.webp"
+          alt="Praia"
+        >
+
+
+        <div class="post-content">
+
+          <div class="post-actions">
+
+            <div class="post-left-actions">
+
+              <button class="action-button like-button">
+
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M20.8 8.7c0 5.4-8.8 10.1-8.8 10.1S3.2 14.1 3.2 8.7C3.2 6 5.1 4 7.6 4c1.7 0 3.3.9 4.4 2.3C13.1 4.9 14.7 4 16.4 4c2.5 0 4.4 2 4.4 4.7z"/>
+                </svg>
+
+              </button>
+
+              <button class="action-button comment-button">
+
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M20 11.5a7.5 7.5 0 0 1-8 7.5 8.5 8.5 0 0 1-3.8-.9L4 20l1.3-3.5A7.4 7.4 0 0 1 4 11.5 7.5 7.5 0 0 1 12 4a7.5 7.5 0 0 1 8 7.5z"/>
+                </svg>
+
+              </button>
+
+              <button class="action-button share-button">
+
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M5 19L19 5"/>
+                  <path d="M10 5h9v9"/>
+                </svg>
+
+              </button>
+
+            </div>
+
+            <button class="action-button save-button">
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M6 4.5A1.5 1.5 0 0 1 7.5 3h9A1.5 1.5 0 0 1 18 4.5V21l-6-4-6 4V4.5z"/>
+              </svg>
+
+            </button>
+
+          </div>
+
+
+          <div class="likes">
+            <span class="like-count">42</span> reações
+          </div>
+
+
+          <div class="caption">
+            <strong>lucas.silva</strong>
+            Um pouco de paz para começar bem a semana. 🌊
+          </div>
+
+
+          <div class="comments">
+            Ver 12 comentários
+          </div>
+
+        </div>
+
+      </article>
+
+    </main>
+
+
+    <!-- BOTTOM NAV -->
+    <nav class="bottom-nav">
+
+      <button class="nav-button active" data-page="home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M3 11L12 3l9 8"/>
+          <path d="M5 10v10h14V10"/>
+        </svg>
+        <span>Início</span>
+      </button>
+
+
+      <button class="nav-button" data-page="explore">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="11" cy="11" r="6.5"/>
+          <path d="M16 16L21 21"/>
+        </svg>
+        <span>Explorar</span>
+      </button>
+
+
+      <button class="nav-button nav-create" data-page="create">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14"/>
+          <path d="M5 12h14"/>
+        </svg>
+      </button>
+
+
+      <button class="nav-button" data-page="notifications">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/>
+          <path d="M10 21h4"/>
+        </svg>
+        <span>Atividade</span>
+      </button>
+
+
+      <button class="nav-button" data-page="profile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="12" cy="8" r="3.5"/>
+          <path d="M5 20c.8-3.5 3.2-5.5 7-5.5s6.2 2 7 5.5"/>
+        </svg>
+        <span>Perfil</span>
+      </button>
+
+    </nav>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
